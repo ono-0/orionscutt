@@ -12,4 +12,3 @@ print(ciphertext)
 with open("ciphertextdatabase.log", "a") as f:
     f.write(ciphertext)
     f.write("\n")
-print("test")
