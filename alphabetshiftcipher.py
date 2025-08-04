@@ -1,3 +1,4 @@
+f = open("ciphertextdatabase.log", "a")
 plaintext = input("enter plaintext")
 plaintextlength = len(plaintext)
 ciphertext = ""
@@ -8,3 +9,6 @@ while plaintextlength != listplace:
     ciphertext = ciphertext + ciphertextpart
     listplace = listplace + 1
 print(ciphertext)
+with open("ciphertextdatabase.log", "a") as f:
+    f.write(ciphertext)
+    f.write("\n")
