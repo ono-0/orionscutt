@@ -1,11 +1,12 @@
 f = open("ciphertextdatabase.log", "a")
 plaintext = input("enter plaintext")
+key = int(input("enter key"))
 plaintextlength = len(plaintext)
 ciphertext = ""
 listplace = 0
 plaintextlist = list(plaintext)
 while plaintextlength != listplace:
-    ciphertextpart = chr(ord(plaintextlist[listplace]) + 1)
+    ciphertextpart = chr(ord(plaintextlist[listplace]) + key)
     ciphertext = ciphertext + ciphertextpart
     listplace = listplace + 1
 print(ciphertext)
