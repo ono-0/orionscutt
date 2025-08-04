@@ -1,9 +1,10 @@
 plaintext = input("enter plaintext")
 plaintextlength = len(plaintext)
+ciphertext = ""
 listplace = 0
 plaintextlist = list(plaintext)
-print(plaintextlist)
 while plaintextlength != listplace:
-    ciphertext = chr(ord(plaintextlist[listplace]) + 1)
-    print(ciphertext)
+    ciphertextpart = chr(ord(plaintextlist[listplace]) + 1)
+    ciphertext = ciphertext + ciphertextpart
     listplace = listplace + 1
+print(ciphertext)
