@@ -1,0 +1,2 @@
+from .ciphertests.shiftcipher.shiftcipherdecrypt import abcdecrypt
+from .ciphertests.shiftcipher.shiftcipherencrypt import abcencrypt
