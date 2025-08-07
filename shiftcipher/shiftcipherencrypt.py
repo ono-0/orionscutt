@@ -1,7 +1,5 @@
 #creating function
 def abcencrypt():
-    #opening/creating log file
-    f = open("ciphertextdatabase.log", "a")
     #getting user inputs
     plaintext = input("enter plaintext")
     key = int(input("enter key"))
@@ -19,7 +17,3 @@ def abcencrypt():
         listplace = listplace + 1
     #printing ciphertext result
     print(ciphertext)
-    #adding ciphertext to log file
-    with open("ciphertextdatabase.log", "a") as f:
-        f.write(ciphertext)
-        f.write("\n")
