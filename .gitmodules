@@ -1,0 +1,3 @@
+[submodule "ciphertests"]
+	path = ciphertests
+	url = https://github.com/ono-0/ciphertests
